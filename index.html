@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#3b1028" />
+  <meta name="description" content="A romantic pink birthday universe made with love for Sima." />
+  <title>Happy Birthday Sima ✨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="hero" id="home">
+    <nav class="nav">
+      <a class="logo" href="#home">for Sima <span>✦</span></a>
+      <a class="nav-link" href="#memories">Our memories <span>↘</span></a>
+    </nav>
+  <div class="flower-bouquet left" aria-hidden="true">
+    <svg viewBox="0 0 340 560" role="img">
+      <path class="flower-stem" d="M170 535 C150 420 205 345 165 235 M166 430 C110 380 94 330 86 286 M184 385 C242 340 251 294 259 246 M168 486 C222 452 244 416 251 382"/>
+      <path class="flower-leaf" d="M151 430 C90 430 68 387 71 355 C121 360 151 389 151 430Z"/>
+      <path class="flower-leaf" d="M193 389 C243 375 273 337 267 307 C224 317 200 348 193 389Z"/>
+      <path class="flower-leaf" d="M123 347 C76 340 48 305 52 278 C92 284 118 310 123 347Z"/>
+      <g class="flower-bloom" transform="translate(165 206)">
+        <ellipse class="flower-petal" fill="#f78fb5" rx="33" ry="65" transform="translate(0 -43)"/>
+        <ellipse class="flower-petal" fill="#ffb4cf" rx="33" ry="65" transform="rotate(45) translate(0 -43)"/>
+        <ellipse class="flower-petal" fill="#f58bb7" rx="33" ry="65" transform="rotate(90) translate(0 -43)"/>
+        <ellipse class="flower-petal" fill="#ffc1d7" rx="33" ry="65" transform="rotate(135) translate(0 -43)"/>
+        <ellipse class="flower-petal" fill="#f58bb7" rx="33" ry="65" transform="rotate(180) translate(0 -43)"/>
+        <ellipse class="flower-petal" fill="#ffc1d7" rx="33" ry="65" transform="rotate(225) translate(0 -43)"/>
+        <ellipse class="flower-petal" fill="#f58bb7" rx="33" ry="65" transform="rotate(270) translate(0 -43)"/>
+        <ellipse class="flower-petal" fill="#ffc1d7" rx="33" ry="65" transform="rotate(315) translate(0 -43)"/>
+        <circle class="flower-center" r="28"/>
+        <circle fill="#d89c5d" r="17" stroke="#fff0bd" stroke-width="1.5"/>
+        <g fill="#fff0bd"><circle cx="-6" cy="-5" r="2.4"/><circle cx="7" cy="-7" r="2.4"/><circle cx="9" cy="5" r="2.4"/><circle cx="-5" cy="8" r="2.4"/><circle r="2.4"/></g>
+      </g>
+      <g class="flower-bloom flower-small" transform="translate(86 276) scale(.53)">
+        <ellipse class="flower-petal" fill="#bba0ff" rx="29" ry="54" transform="translate(0 -34)"/>
+        <ellipse class="flower-petal" fill="#d7c2ff" rx="29" ry="54" transform="rotate(60) translate(0 -34)"/>
+        <ellipse class="flower-petal" fill="#bba0ff" rx="29" ry="54" transform="rotate(120) translate(0 -34)"/>
+        <ellipse class="flower-petal" fill="#d7c2ff" rx="29" ry="54" transform="rotate(180) translate(0 -34)"/>
+        <ellipse class="flower-petal" fill="#bba0ff" rx="29" ry="54" transform="rotate(240) translate(0 -34)"/>
+        <ellipse class="flower-petal" fill="#d7c2ff" rx="29" ry="54" transform="rotate(300) translate(0 -34)"/>
+        <circle class="flower-center" r="22"/>
+      </g>
+      <g class="flower-bloom flower-small" transform="translate(259 236) scale(.42)">
+        <ellipse class="flower-petal" fill="#ffcc8e" rx="29" ry="54" transform="translate(0 -34)"/>
+        <ellipse class="flower-petal" fill="#ffe0ad" rx="29" ry="54" transform="rotate(60) translate(0 -34)"/>
+        <ellipse class="flower-petal" fill="#ffcc8e" rx="29" ry="54" transform="rotate(120) translate(0 -34)"/>
+        <ellipse class="flower-petal" fill="#ffe0ad" rx="29" ry="54" transform="rotate(180) translate(0 -34)"/>
+        <ellipse class="flower-petal" fill="#ffcc8e" rx="29" ry="54" transform="rotate(240) translate(0 -34)"/>
+        <ellipse class="flower-petal" fill="#ffe0ad" rx="29" ry="54" transform="rotate(300) translate(0 -34)"/>
+        <circle class="flower-center" r="22"/>
+      </g>
+    </svg>
+  </div>
+  <div class="flower-bouquet right" aria-hidden="true">
+    <svg viewBox="0 0 340 560" role="img">
+      <path class="flower-stem" d="M170 535 C150 420 205 345 165 235 M166 430 C110 380 94 330 86 286 M184 385 C242 340 251 294 259 246 M168 486 C222 452 244 416 251 382"/>
+      <path class="flower-leaf" d="M151 430 C90 430 68 387 71 355 C121 360 151 389 151 430Z"/>
+      <path class="flower-leaf" d="M193 389 C243 375 273 337 267 307 C224 317 200 348 193 389Z"/>
+      <path class="flower-leaf" d="M123 347 C76 340 48 305 52 278 C92 284 118 310 123 347Z"/>
+      <g class="flower-bloom" transform="translate(165 206)">
+        <ellipse class="flower-petal" fill="#f78fb5" rx="33" ry="65" transform="translate(0 -43)"/>
+        <ellipse class="flower-petal" fill="#ffb4cf" rx="33" ry="65" transform="rotate(45) translate(0 -43)"/>
+        <ellipse class="flower-petal" fill="#f58bb7" rx="33" ry="65" transform="rotate(90) translate(0 -43)"/>
+        <ellipse class="flower-petal" fill="#ffc1d7" rx="33" ry="65" transform="rotate(135) translate(0 -43)"/>
+        <ellipse class="flower-petal" fill="#f58bb7" rx="33" ry="65" transform="rotate(180) translate(0 -43)"/>
+        <ellipse class="flower-petal" fill="#ffc1d7" rx="33" ry="65" transform="rotate(225) translate(0 -43)"/>
+        <ellipse class="flower-petal" fill="#f58bb7" rx="33" ry="65" transform="rotate(270) translate(0 -43)"/>
+        <ellipse class="flower-petal" fill="#ffc1d7" rx="33" ry="65" transform="rotate(315) translate(0 -43)"/>
+        <circle class="flower-center" r="28"/>
+        <circle fill="#d89c5d" r="17" stroke="#fff0bd" stroke-width="1.5"/>
+        <g fill="#fff0bd"><circle cx="-6" cy="-5" r="2.4"/><circle cx="7" cy="-7" r="2.4"/><circle cx="9" cy="5" r="2.4"/><circle cx="-5" cy="8" r="2.4"/><circle r="2.4"/></g>
+      </g>
+      <g class="flower-bloom flower-small" transform="translate(86 276) scale(.53)">
+        <ellipse class="flower-petal" fill="#bba0ff" rx="29" ry="54" transform="translate(0 -34)"/>
+        <ellipse class="flower-petal" fill="#d7c2ff" rx="29" ry="54" transform="rotate(60) translate(0 -34)"/>
+        <ellipse class="flower-petal" fill="#bba0ff" rx="29" ry="54" transform="rotate(120) translate(0 -34)"/>
+        <ellipse class="flower-petal" fill="#d7c2ff" rx="29" ry="54" transform="rotate(180) translate(0 -34)"/>
+        <ellipse class="flower-petal" fill="#bba0ff" rx="29" ry="54" transform="rotate(240) translate(0 -34)"/>
+        <ellipse class="flower-petal" fill="#d7c2ff" rx="29" ry="54" transform="rotate(300) translate(0 -34)"/>
+        <circle class="flower-center" r="22"/>
+      </g>
+      <g class="flower-bloom flower-small" transform="translate(259 236) scale(.42)">
+        <ellipse class="flower-petal" fill="#ffcc8e" rx="29" ry="54" transform="translate(0 -34)"/>
+        <ellipse class="flower-petal" fill="#ffe0ad" rx="29" ry="54" transform="rotate(60) translate(0 -34)"/>
+        <ellipse class="flower-petal" fill="#ffcc8e" rx="29" ry="54" transform="rotate(120) translate(0 -34)"/>
+        <ellipse class="flower-petal" fill="#ffe0ad" rx="29" ry="54" transform="rotate(180) translate(0 -34)"/>
+        <ellipse class="flower-petal" fill="#ffcc8e" rx="29" ry="54" transform="rotate(240) translate(0 -34)"/>
+        <ellipse class="flower-petal" fill="#ffe0ad" rx="29" ry="54" transform="rotate(300) translate(0 -34)"/>
+        <circle class="flower-center" r="22"/>
+      </g>
+    </svg>
+  </div>
+
+    <div class="hero-inner">
+      <div class="date-pill"><span class="pulse-dot"></span> 24 OCTOBER · YOUR SPECIAL DAY</div>
+      <p class="tiny-kicker">A little universe made just for you</p>
+      <h1>Happy Birthday,<br><em>Sima.</em></h1>
+      <p class="hero-copy">To my best friend, my good friend, my favourite human — and the person who makes so many ordinary moments feel unforgettable.</p>
+      <a class="glow-button" href="#letter">Open your birthday letter <span>↘</span></a>
+      <div class="hero-footnote"><span>✦</span> Made with care, memories & a little magic <span>✦</span></div>
+    </div>
+    <div class="orbit orbit-a"><span>✦</span></div><div class="orbit orbit-b"><span>♡</span></div>
+    <div class="side-note">A FRIENDSHIP I’LL ALWAYS TREASURE</div>
+    <div class="hero-bottom"><span>SCROLL TO EXPLORE</span><span class="down-arrow">↓</span></div>
+  </header>
+
+  <main>
+    <section class="intro section reveal">
+      <p class="section-label">Dear Sima</p>
+      <h2>Some people are a gift.<br><em>You are one of mine.</em></h2>
+      <p class="intro-text">Today is all about celebrating you — your smile, your heart, your little habits, your strength, and all the ways you make life better just by being yourself. This page is a small reminder of how much you matter to me.</p>
+      <div class="sparkle-rule"><span>✦</span></div>
+    </section>
+
+    <section class="gallery section" id="memories">
+      <div class="section-top reveal">
+        <div><p class="section-label">A collection of little moments</p><h2>Our memory <em>universe</em></h2></div>
+        <p>15 photos. So many stories.<br>Every picture has a little piece of us.</p>
+      </div>
+      <div class="photo-grid" id="photoGrid"></div>
+      <p class="photo-help">Your photos go here · Add <code>photo1.jpg</code> through <code>photo15.jpg</code> to the <code>photos</code> folder.</p>
+    </section>
+
+    <section class="letter-section section" id="letter">
+      <div class="section-top reveal">
+        <div><p class="section-label">A note from my heart</p><h2>15 October? No — <em>24 October is yours.</em></h2></div>
+        <p>Take your time reading.<br>This one's just for you, Sima. ♡</p>
+      </div>
+      <div class="letter-layout">
+        <aside class="letter-aside reveal">
+          <div class="big-number">24<span>OCT</span></div>
+          <div class="aside-line"></div>
+          <p>Today we celebrate<br><strong>YOU.</strong></p>
+          <span class="aside-star">✦</span>
+        </aside>
+        <div class="letter-list">
+          <article class="letter reveal"><span class="letter-no">01</span><div><h3>Happy birthday to my favourite person</h3><p>Happy birthday, Sima! I hope your day begins with a smile and ends with a heart full of happiness. You deserve kindness, peace, success, and all the little things that make you feel loved. I wanted to make something different for you, something you can look at and remember that you are genuinely special to me. Today is your day, so please smile a little extra.</p></div><span class="letter-icon">✦</span></article>
+          <article class="letter reveal"><span class="letter-no">02</span><div><h3>My best friend, always</h3><p>You are more than just a friend to me. You are my best friend, my good friend, my partner in silly conversations, and someone I can share so many thoughts with. Some people come into our lives and slowly become a part of our everyday world. You have become one of those people for me, and I am honestly thankful for that. Having you in my life is a beautiful thing.</p></div><span class="letter-icon">♡</span></article>
+          <article class="letter reveal"><span class="letter-no">03</span><div><h3>Thank you for being yourself</h3><p>I like that you are simply you — with your own way of talking, laughing, thinking, and seeing the world. You do not have to be perfect or pretend to be someone else to matter. Your presence, your personality, and the little things that make you different are exactly what make you memorable. I hope you never forget how valuable you are, even on the days when life feels difficult.</p></div><span class="letter-icon">✦</span></article>
+          <article class="letter reveal"><span class="letter-no">04</span><div><h3>All our random memories</h3><p>Some memories are made during special occasions, but some of the best ones happen without any plan at all. The random talks, the jokes, the unexpected moments, and the times we laugh over something tiny are all worth keeping. Maybe we will forget some details as time passes, but I hope we never lose the happiness those moments gave us. They are little pieces of our story that I will always appreciate.</p></div><span class="letter-icon">♡</span></article>
+          <article class="letter reveal"><span class="letter-no">05</span><div><h3>Even when we disagree</h3><p>Of course, no friendship is perfect every single day. Sometimes we misunderstand each other, get annoyed, or say things differently from how we mean them. But a difficult moment does not have to erase all the good moments around it. I hope we keep learning to listen, explain ourselves honestly, and give each other space when needed. Real friendship is not about never having problems; it is about treating each other with care through them.</p></div><span class="letter-icon">✦</span></article>
+          <article class="letter reveal"><span class="letter-no">06</span><div><h3>You make little things brighter</h3><p>Sometimes a simple message, a funny reply, or a short conversation can make a whole day feel better. That is one of the things I appreciate about having you as my friend. You bring your own kind of energy into moments, and you probably do not even realise how much the smallest things can mean. I hope life gives you the same warmth and happiness that you have brought into the lives of people around you.</p></div><span class="letter-icon">♡</span></article>
+          <article class="letter reveal"><span class="letter-no">07</span><div><h3>I am proud of you</h3><p>I hope this new year of your life brings you closer to the dreams you keep in your heart. I hope you find the courage to try new things, the patience to keep going when something is hard, and the confidence to see what others can already see in you. You have so much ahead of you, Sima. Never feel that you need to have everything figured out today. Keep growing at your own pace.</p></div><span class="letter-icon">✦</span></article>
+          <article class="letter reveal"><span class="letter-no">08</span><div><h3>Keep that beautiful smile</h3><p>I hope you have a hundred reasons to smile this year — not just for photos, but in those real moments when you feel peaceful and happy inside. I hope you laugh until your cheeks hurt, discover places and ideas you love, and spend time with people who respect and support you. And on a day when you feel low, I hope you remember that one difficult day can never define your whole story.</p></div><span class="letter-icon">♡</span></article>
+          <article class="letter reveal"><span class="letter-no">09</span><div><h3>More memories waiting for us</h3><p>There are still so many conversations to have, jokes to make, photos to take, and ordinary days that will become good memories later. I hope we keep making room for those moments, even when life gets busy and everyone has their own responsibilities. We do not need every day to be extraordinary. Sometimes it is enough to check in, share a laugh, and remind each other that this friendship still matters.</p></div><span class="letter-icon">✦</span></article>
+          <article class="letter reveal"><span class="letter-no">10</span><div><h3>One last thing, birthday girl</h3><p>Sima, thank you for being my best friend and such an important part of my life. I hope your birthday is full of genuine smiles, sweet surprises, and people who make you feel appreciated. May this next chapter bring you good health, confidence, new opportunities, and memories that make you happy whenever you look back. Keep being your wonderful self. Happy birthday for 24 October — you deserve a beautiful year ahead. ♡</p></div><span class="letter-icon">♡</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="finale section reveal">
+      <div class="finale-card">
+        <div class="confetti-symbol">✧</div>
+        <p class="section-label">A little birthday wish</p>
+        <h2>May your next chapter<br>be <em>your brightest yet.</em></h2>
+        <p>More laughter. More courage. More beautiful memories.<br>More reasons to be proud of the person you are becoming.</p>
+        <button class="glow-button" id="wishButton" type="button">Make a birthday wish <span>✦</span></button>
+        <div class="wish-result" id="wishResult" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>Made especially for Sima</span><span class="footer-star">✦</span><span>24 October · Happy Birthday ♡</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
